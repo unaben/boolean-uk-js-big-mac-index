@@ -1,134 +1,122 @@
 const priceOfBigMacInTheUS  = 5.66;
 const priceOfBigMacInTheUK = 2.29;
 
-const impliedPurchasingPower = priceOfBigMacInTheUS / priceOfBigMacInTheUK;
+const impliedPurchasingPowerUsvsUK = priceOfBigMacInTheUS / priceOfBigMacInTheUK;
 
-//Annual exchange rate of USD to Pound sterling = $1.56 to £1
+console.log (impliedPurchasingPowerUsvsUK);
 
-console.log (impliedPurchasingPower);
+const actualExchangeRateUsdtoPoundSterling = 2.0;
 
-const actualExchangeRate = 2.0;
+const bigMacPriceIndexInDecimalUsvsUK = (actualExchangeRateUsdtoPoundSterling - impliedPurchasingPowerUsvsUK) / impliedPurchasingPowerUsvsUK;
 
-const ukBigMacPriceIndex = (actualExchangeRate - impliedPurchasingPower) / impliedPurchasingPower;
+console.log (bigMacPriceIndexInDecimalUsvsUK);
 
-console.log (ukBigMacPriceIndex);
+const bigMacPriceIndexInPercentageUsvsUk = (bigMacPriceIndexInDecimalUsvsUK *100).toFixed();
 
-const bigMacPriceIndex = (ukBigMacPriceIndex *100).toFixed();
+console.log (typeof bigMacPriceIndexInPercentageUsvsUk);
+console.log (bigMacPriceIndexInPercentageUsvsUk + "%");
 
-console.log (typeof bigMacPriceIndex);
-console.log (bigMacPriceIndex + "%");
+// Turkey - bigMacPriceIndex
 
-// Germany - bigMacPriceIndex
+const priceOfBigMacInTheUSfor2021  = 5.66;
+const priceOfBigMacInTurkeyfor2021 = 2.01;
 
-// const priceOfBigMacInTheUS  = 5.66;
-const priceOfBigMacInGermany = 2.99;
+const impliedPurchasingPowerUsvsTurkey = priceOfBigMacInTheUSfor2021 / priceOfBigMacInTurkeyfor2021;
 
-const impliedPurchasingPowerGermany = priceOfBigMacInTheUS / priceOfBigMacInGermany;
+console.log (impliedPurchasingPowerUsvsTurkey);
 
-//Annual exchange rate of USD to Euros = $1.89 to 1EUROS
+const actualExchangeRateUsdtoTurkishLira = 8.61;
 
-console.log (impliedPurchasingPowerGermany);
+const bigMacPriceIndexInDecimalUsvsTurkey = (actualExchangeRateUsdtoTurkishLira - impliedPurchasingPowerUsvsTurkey) / impliedPurchasingPowerUsvsTurkey;
 
-const actualExchangeRateGerman = 2.0;
+console.log (bigMacPriceIndexInDecimalUsvsTurkey);
 
-const germanyBigMacPriceIndex = (actualExchangeRateGerman - impliedPurchasingPowerGermany) / impliedPurchasingPowerGermany;
+const bigMacPriceIndexInPercentageUsvsTurkey = (bigMacPriceIndexInDecimalUsvsTurkey *100).toFixed();
 
-console.log (germanyBigMacPriceIndex);
-
-const bigMacPriceIndexGerman = (germanyBigMacPriceIndex *100).toFixed();
-
-console.log (typeof bigMacPriceIndexGerman);
-console.log (bigMacPriceIndexGerman + "%");
+console.log (typeof bigMacPriceIndexInPercentageUsvsTurkey);
+console.log (bigMacPriceIndexInPercentageUsvsTurkey + "%");
 
 
 // SWEDEN - bigmacPriceIndex
 
-// const priceOfBigMacInTheUS  = 5.66;
-const priceOfBigMacInSweden = 6.5;
+const priceOfBigMacInTheUSfor2021i  = 5.66;
+const priceOfBigMacInSwedenfor2021 = 6.37;
 
-const impliedPurchasingPowerSweden = priceOfBigMacInTheUS / priceOfBigMacInSweden;
+const impliedPurchasingPowerUsvsSweden = priceOfBigMacInTheUSfor2021i / priceOfBigMacInSwedenfor2021;
 
-// Annual exchange rate of USD to USD = $1 to 0.92CHF
+console.log (impliedPurchasingPowerUsvsSweden);
 
-console.log (impliedPurchasingPowerSweden);
+const actualExchangeRateUsdtoSwedishKrona = 8.628;
 
-const actualExchangeRateSweden = 1;
+const bigMacPriceIndexInDecimalUsvsSweden =  (actualExchangeRateUsdtoSwedishKrona - impliedPurchasingPowerUsvsSweden) / impliedPurchasingPowerUsvsSweden;
 
-const swedishBigmacPriceIndex =  (actualExchangeRateSweden - impliedPurchasingPowerSweden) / impliedPurchasingPowerSweden;
+console.log(bigMacPriceIndexInDecimalUsvsSweden);
 
-console.log(swedishBigmacPriceIndex);
+const bigMacPriceIndexInPercentageUsvsSwedish = (bigMacPriceIndexInDecimalUsvsSweden * 100).toFixed();
 
-const bigmacPriceIndexSwedish = (swedishBigmacPriceIndex * 100).toFixed();
-
-console.log(typeof bigmacPriceIndexSwedish);
-console.log(bigmacPriceIndexSwedish + "%");
+console.log(typeof bigMacPriceIndexInPercentageUsvsSwedish);
+console.log(bigMacPriceIndexInPercentageUsvsSwedish + "%");
 
 // NORWAY - bigmacPriceIndex
 
-// const priceOfBigMacInTheUS  = 5.66;
-const priceOfBigMacInNorway = 52.00;
+const priceOfBigMacInTheUSfor2021ii  = 5.66;
+const priceOfBigMacInNorwayfor2021 = 6.09;
 
-const impliedPurchasingPowerNorway = priceOfBigMacInTheUS / priceOfBigMacInNorway;
+const impliedPurchasingPowerUsvsNorway = priceOfBigMacInTheUSfor2021i / priceOfBigMacInNorwayfor2021;
 
-// Annual exchange rate of NOK to USD = 52NOk at the time of this evaluation.
+console.log (impliedPurchasingPowerUsvsNorway);
 
-console.log (impliedPurchasingPowerNorway);
+const actualExchangeRateUsdtoNorwegianKrone = 8.78;
 
-const actualExchangeRateNorwegian = 1;
+const bigMacPriceIndexInDecimalUsvsNorway =  (actualExchangeRateUsdtoNorwegianKrone - impliedPurchasingPowerUsvsNorway) / impliedPurchasingPowerUsvsNorway;
 
-const norwagianBigmacPriceIndex =  (actualExchangeRateNorwegian - impliedPurchasingPowerNorway) / impliedPurchasingPowerNorway;
+console.log(bigMacPriceIndexInDecimalUsvsNorway);
 
-console.log(norwagianBigmacPriceIndex);
+const bigMacPriceIndexInPercentageUsvsNorway = (bigMacPriceIndexInDecimalUsvsNorway * 100).toFixed();
 
-const bigmacPriceIndexNorway = (norwagianBigmacPriceIndex * 100).toFixed();
-
-console.log(typeof bigmacPriceIndexNorway);
-console.log(bigmacPriceIndexNorway + "%");
+console.log(typeof bigMacPriceIndexInPercentageUsvsNorway);
+console.log(bigMacPriceIndexInPercentageUsvsNorway + "%");
 
 
 // Isreal - bigmacPriceIndex
 
-// const priceOfBigMacInTheUS  = 5.66;
-const priceOfBigMacInIsreal = 17.00;
+const priceOfBigMacInTheUSfor2021iii  = 5.66;
+const priceOfBigMacInIsrealfor2021 = 5.35;
 
-const impliedPurchasingPowerIsreal = priceOfBigMacInTheUS / priceOfBigMacInIsreal;
+const impliedPurchasingPowerUsvsIsreal = priceOfBigMacInTheUSfor2021ii / priceOfBigMacInIsrealfor2021;
 
-// Annual exchange rate of ILS to USD = 3.2ILS at the time of this evaluation.
+console.log (impliedPurchasingPowerUsvsIsreal);
 
-console.log (impliedPurchasingPowerIsreal);
+const actualExchangeRateUsdtoIsrealiShekel = 3.28;
 
-const actualExchangeRateIsreal = 1;
+const bigMacPriceIndexInDecimalUsvsIsreal =  (actualExchangeRateUsdtoIsrealiShekel - impliedPurchasingPowerUsvsIsreal) / impliedPurchasingPowerUsvsIsreal;
 
-const isrealBigmacPriceIndex =  (actualExchangeRateIsreal - impliedPurchasingPowerIsreal) / impliedPurchasingPowerIsreal;
+console.log(bigMacPriceIndexInDecimalUsvsIsreal);
 
-console.log(isrealBigmacPriceIndex);
+const bigMacPriceIndexInPercentageUsvsIsreal = (bigMacPriceIndexInDecimalUsvsIsreal * 100).toFixed();
 
-const bigmacPriceIndexIsreal = (isrealBigmacPriceIndex * 100).toFixed();
-
-console.log(typeof bigmacPriceIndexIsreal);
-console.log(bigmacPriceIndexIsreal + "%");
+console.log(typeof bigMacPriceIndexInPercentageUsvsIsreal);
+console.log(bigMacPriceIndexInPercentageUsvsIsreal + "%");
 
 
 // Canada - bigmacPriceIndex
 
-// const priceOfBigMacInTheUS  = 5.66;
-const priceOfBigMacInCanada = 52.00;
+const priceOfBigMacInTheUSfor2021iv  = 5.66;
+const priceOfBigMacInCanadafor2021 = 5.29;
 
-const impliedPurchasingPowerCanada = priceOfBigMacInTheUS / priceOfBigMacInCanada;
+const impliedPurchasingPowerUsvsCanada = priceOfBigMacInTheUSfor2021iv / priceOfBigMacInCanadafor2021;
 
-// Annual exchange rate of CAD to USD = 1.25CAD" at the time of this evaluation.
+console.log (impliedPurchasingPowerUsvsCanada);
 
-console.log (impliedPurchasingPowerCanada);
+const actualExchangeRateUsdvsCanadiandollar = 1.25;
 
-const actualExchangeRateCanadian = 1;
+const bigMacPriceIndexInDecimalUsvsCanada =  (actualExchangeRateUsdvsCanadiandollar - impliedPurchasingPowerUsvsCanada) / impliedPurchasingPowerUsvsCanada;
 
-const canadaBigmacPriceIndex =  (actualExchangeRateCanadian - impliedPurchasingPowerCanada) / impliedPurchasingPowerCanada;
+console.log (bigMacPriceIndexInDecimalUsvsCanada);
 
-console.log(canadaBigmacPriceIndex);
+const bigMacPriceIndexInPercentageUsvsCanada = (bigMacPriceIndexInDecimalUsvsCanada * 100).toFixed();
 
-const bigmacPriceIndexCanada = (canadaBigmacPriceIndex * 100).toFixed();
-
-console.log(typeof bigmacPriceIndexCanada);
-console.log(bigmacPriceIndexCanada + "%");
+console.log(typeof bigMacPriceIndexInPercentageUsvsCanada);
+console.log(bigMacPriceIndexInPercentageUsvsCanada + "%");
 
 
